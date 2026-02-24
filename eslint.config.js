@@ -1,20 +1,13 @@
-import globals from 'globals';
-
 export default [
   {
     files: ['src/**/*.js', 'src/**/*.test.js'],
-    ignores: ['coverage/**', 'node_modules/**'],
+    ignores: ['coverage/', 'node_modules/'],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'module',
-      globals: {
-        ...globals.node,
-        ...globals.jest,
-        ...globals.es2021
-      }
+      sourceType: 'module'
     },
     rules: {
-      'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      'no-unused-vars': 'error',
       'semi': ['error', 'always'],
       'quotes': ['error', 'single'],
       'no-console': 'warn'
