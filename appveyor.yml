@@ -1,5 +1,5 @@
-image: Ubuntu1804  # образ для сборки
-stack: node 16  # окружение
+image: Ubuntu2204    # образ для сборки
+stack: node 18  # окружение
 
 branches:
   only:
